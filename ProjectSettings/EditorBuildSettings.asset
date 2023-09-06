@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/FillInTheBlank.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c7cdc0e423abb8840aa58f57257ba15f, type: 2}
