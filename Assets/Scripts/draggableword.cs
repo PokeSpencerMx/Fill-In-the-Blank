@@ -7,32 +7,32 @@ public class draggableword : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     //Code based on tutorial by Coco Code
     
-    Transform parentAfterDrag;
+    //Transform parentAfterDrag;
     
     public void OnBeginDrag(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
-        Debug.Log("Begin drag");
-        parentAfterDrag = transform.parent;
-        transform.SetParent(transform.root);
-        transform.SetAsLastSibling();
+        //Debug.Log("Begin drag");
+        //parentAfterDrag = transform.parent;
+        //transform.SetParent(transform.root);
+        //transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
-        Debug.Log("Dragging");
-        //transform.position = Input.mousePosition;
+        /*Debug.Log("Dragging");
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
-        transform.position = mousePosition;
+        transform.position = mousePosition;*/
+        transform.position = Input.mousePosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
-        Debug.Log("End drag");
-        transform.SetParent(parentAfterDrag);
+        //Debug.Log("End drag");
+        //transform.SetParent(parentAfterDrag);
     }
     
     // Start is called before the first frame update
